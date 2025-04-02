@@ -17,11 +17,11 @@ public class LibraryController {
     @Autowired
     private LibraryServices libraryservices;
 
-//    @GetMapping("/books")
-//    public List<Books> getAllBooks(){
-//
-//        return libraryservices.getAllBooks();
-//    }
+    @GetMapping("/books")
+    public List<Books> getAllBooks(){
+
+        return libraryservices.getAllBooks();
+    }
 //
 //    @PostMapping("/books")
 //    public String addBook(@RequestBody Books book){
