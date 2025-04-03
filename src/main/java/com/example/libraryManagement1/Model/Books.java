@@ -13,6 +13,9 @@ import org.springframework.context.annotation.Bean;
 @Entity
 public class Books {
 
+    public Books() {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bookId;
