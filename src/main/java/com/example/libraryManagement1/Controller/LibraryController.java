@@ -22,21 +22,21 @@ public class LibraryController {
 
         return libraryservices.getAllBooks();
     }
-//
-//    @PostMapping("/books")
-//    public String addBook(@RequestBody Books book){
-//
-//        Books bookValue=libraryservices.addBook(book);
-//        if(bookValue.equals(book)){
-//
-//            return "Book added to the library";
-//        }
-//        else{
-//            return "Book cannot add to the library";
-//        }
-//    }
 
-    @GetMapping("/books")
+    @PostMapping("/books")
+    public String addBook(@RequestBody Books book){
+
+        Books bookValue=libraryservices.addBook(book);
+        if(bookValue.equals(book)){
+
+            return "Book added to the library";
+        }
+        else{
+            return "Book cannot add to the library";
+        }
+    }
+
+    @GetMapping("/welcome")
     public String helloWorld(){
         return "Welcome world..";
     }
