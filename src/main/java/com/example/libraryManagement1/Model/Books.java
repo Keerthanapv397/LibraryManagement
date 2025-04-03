@@ -22,4 +22,7 @@ public class Books {
     private String bookPrice;
 
 
+    public Books(){
+
+    }
 }
